@@ -1,0 +1,172 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url(./../fonts/roboto-v29-latin_cyrillic-regular.woff2) format('woff2');
+}
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto"),
+  url(./../fonts/roboto-v29-latin_cyrillic-500.woff2) format('woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.advantages {
+  height: 569px;
+}
+
+.advantages-label {
+  margin: 120px auto 0;
+}
+
+.advantages-label-name {
+  font-weight: 500;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  width: 100px;
+  background-color: #f5bd41;
+  margin: 20px auto 0;
+  height: 4px;
+  border: 0;
+}
+
+.advantages-elements {
+  width: 1120px;
+  margin: 104px auto 0;
+}
+
+.elements-name {
+  margin: 52px 0 0 0;
+}
+
+.element {
+  display: inline-block;
+  width: 25%;
+  height: 176px;
+  float: left;
+}
+
+.icon-1 {
+  display: block;
+  margin: 4px auto 0;
+}
+
+.icon-2 {
+  display: block;
+  margin: 8px auto 0;
+}
+
+.icon-3 {
+  display: block;
+  margin: 17px auto 0;
+}
+
+.icon-4 {
+  display: block;
+  margin: 4px auto 0;
+}
+
+.elements-name-1 {
+  display: flex;
+  font-weight: 400;
+  margin: 52px auto 0;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.elements-name-2 {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  margin: 56px auto 0;
+  font-size: 24px;
+}
+
+.elements-name-3 {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  margin: 64px auto 0;
+  font-size: 24px;
+}
+
+.elements-name-4 {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  margin: 60px auto 0;
+  font-size: 24px;
+}
+
+.footer {
+  height: 630px;
+  background: #10367C;
+}
+
+.footer-container {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+.elem {
+  margin-top: 24px;
+}
+
+.list-about {
+  flex-direction: column;
+  list-style: none;
+  display: inline-block;
+  margin: 120px 0 0 104px;
+}
+
+.list-property_types {
+  flex-direction: column;
+  list-style: none;
+  display: inline-block;
+  margin: 120px 0 0 223px;
+}
+
+.list-support {
+  flex-direction: column;
+  list-style: none;
+  display: inline-block;
+  margin: 120px 0 0 282px;
+}
+
+.about {
+  font-weight: 500;
+}
+
+.property_types {
+  font-weight: 500;
+}
+
+.support {
+  font-weight: 500;
+}
+
+.signature {
+  color: #ffffff;
+  margin: 120px 0 120px 103px;
+}
+
+.lists {
+  display: flex;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
