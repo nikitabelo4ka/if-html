@@ -1,11 +1,24 @@
+@import url("./fonts.css");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.advantages {
+  height: 569px;
 }
 
 .advantages-label {
-  width: 180px;
   margin: 120px auto 0;
+}
+
+.advantages-label-name {
+  font-weight: 500;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .line {
@@ -33,41 +46,119 @@
 }
 
 .icon-1 {
-  display:block;
+  display: block;
   margin: 4px auto 0;
 }
 
 .icon-2 {
-  display:block;
+  display: block;
   margin: 8px auto 0;
 }
 
 .icon-3 {
-  display:block;
+  display: block;
   margin: 17px auto 0;
 }
 
 .icon-4 {
-  display:block;
+  display: block;
   margin: 4px auto 0;
 }
 
 .elements-name-1 {
+  display: flex;
+  font-weight: 400;
   margin: 52px auto 0;
-  width: 84px;
+  justify-content: center;
+  font-size: 24px;
 }
 
 .elements-name-2 {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
   margin: 56px auto 0;
-  width: 157px;
+  font-size: 24px;
 }
 
 .elements-name-3 {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
   margin: 64px auto 0;
-  width: 79px;
+  font-size: 24px;
 }
 
 .elements-name-4 {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
   margin: 60px auto 0;
-  width: 139px;
+  font-size: 24px;
+}
+
+.footer {
+  height: 630px;
+  background: #10367C;
+}
+
+.footer-container {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+.elem {
+  margin-top: 24px;
+}
+
+.list-about {
+  flex-direction: column;
+  list-style: none;
+  display: inline-block;
+  margin: 120px 0 0 104px;
+}
+
+.list-property_types {
+  flex-direction: column;
+  list-style: none;
+  display: inline-block;
+  margin: 120px 0 0 223px;
+}
+
+.list-support {
+  flex-direction: column;
+  list-style: none;
+  display: inline-block;
+  margin: 120px 0 0 282px;
+}
+
+.about {
+  font-weight: 500;
+}
+
+.property_types {
+  font-weight: 500;
+}
+
+.support {
+  font-weight: 500;
+}
+
+.signature {
+  color: #ffffff;
+  margin: 120px 0 120px 103px;
+}
+
+.lists {
+  display: flex;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.link {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
 }
