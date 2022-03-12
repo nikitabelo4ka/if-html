@@ -4,6 +4,367 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.block {
+  padding-top: 51px;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 934px;
+  background-size: 100%;
+}
+
+.block-container {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+
+.header {
+  margin: 0 104px 0 104px;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 205px;
+  height: 40px;
+}
+
+.right-header-content {
+  justify-content: flex-end;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 48px;
+  width: 203px;
+  height: 30px;
+}
+
+.stays {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.stays::after {
+  margin: 8px 0 0 4px;
+  display: block;
+  content: "";
+  background-color: #F5BD41;
+  width: 50px;
+  height: 4px;
+}
+
+.attractions {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.right-header-content-icons {
+  align-items: center;
+  display: flex;
+  width: 95px;
+  height: 40px;
+}
+
+.night-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 24px;
+}
+
+.slogan {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: #ffffff;
+  margin: 202px 0 0 104px;
+}
+
+.booking-area {
+  margin: 100px 0 0 104px;
+}
+
+.input-lables {
+  margin:0 0 24px 24px;
+}
+
+.destination-label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.date-in-out-label {
+  margin-left: 221px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.inputs {
+  background-color: #ffffff;
+  width: 1223px;
+  border-radius: 8px;
+}
+
+.destination {
+  line-height: 21.09px;
+  border: 0;
+  padding: 24.5px 0 21px 24px;
+  width: 467px;
+  border-radius: 8px 0 0 8px;
+  font-size: 18px;
+}
+
+.date-in-out {
+  line-height: 21.09px;
+  border: 3px solid #F5BD41;
+  border-radius: 8px;
+  padding: 18.9px 0 16.11px 21px;
+  width: 259px;
+  font-size: 18px;
+}
+
+.people-room {
+  border: 0;
+  padding: 24.5px 0 21px 24px;
+  width: 305px;
+  line-height: 21.09px;
+  font-size: 18px;
+}
+
+.search {
+  padding: 21.5px 57px 24.5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+  background: #3077C6;
+  border: 0;
+  width: 192px;
+  line-height: 21.09px;
+  border-radius: 8px;
+}
+
+.applications-icons {
+  display: flex;
+  margin: 121px 0 120px 585px;
+}
+
+.google-play {
+  position: relative;
+}
+
+.google-name {
+  position: absolute;
+  top: 17.05px;
+  left: 41.04px;
+}
+
+.letter-g-google, .letter-e-google, .letter-t-1-google, .letter-i-google, .letter-t-2-google, .letter-o-google, .letter-n-google {
+  position: absolute;
+  top: 6.87px;
+}
+
+.letter-g-google {
+  left: 41.35px;
+}
+
+.letter-e-google {
+  left: 48.53px;
+}
+
+.letter-t-1-google {
+  left: 52.83px;
+}
+
+.letter-i-google {
+  left: 59.94px;
+}
+
+.letter-t-2-google {
+  left: 61.68px;
+}
+
+.letter-o-google {
+  left: 68.33px;
+}
+
+.letter-n-google {
+  left: 75.58px;
+}
+
+.google-logo-blue, .google-logo-green, .google-logo-orange, .google-logo-red {
+  position: absolute;
+}
+
+.google-logo-blue {
+  top: 7.47px;
+  left: 9.98px;
+}
+
+.google-logo-green {
+  top: 7.14px;
+  left: 10.43px;
+}
+
+.google-logo-orange {
+  top: 15.72px;
+  left: 22.9px;
+}
+
+.google-logo-red {
+  top: 20px;
+  left: 10.44px;
+}
+
+.google-play-border, .apple-backgr {
+  position: absolute;
+}
+
+.apple {
+  margin-left: 17px;
+  position: relative;
+}
+
+.letter-d-apple-big, .letter-o-1-apple-small, .letter-w-apple, .letter-n-apple, .letter-l-apple, .letter-o-2-apple-small, .letter-a-apple-small, .letter-d-apple-small, .letter-o-3-apple-small, .letter-n-2-apple-small, .letter-t-apple, .letter-h-apple, .letter-e-apple-small {
+  position: absolute;
+}
+
+.letter-d-apple-big {
+  top: 8.72px;
+  left: 35.67px;
+}
+
+.letter-o-1-apple-small {
+  top: 10.11px;
+  left: 41.67px;
+}
+
+.letter-w-apple {
+  top: 10.19px;
+  left: 46.57px;
+}
+
+.letter-n-apple {
+  top: 10.1px;
+  left: 53.85px;
+}
+
+.letter-l-apple {
+  top: 8.44px;
+  left: 59.09px;
+}
+
+.letter-o-2-apple-small {
+  top: 10.11px;
+  left: 61.21px;
+}
+
+.letter-a-apple-small {
+  top: 10.11px;
+  left: 66.4px;
+}
+
+.letter-d-apple-small {
+  top: 8.44px;
+  left: 71.35px;
+}
+
+.letter-o-3-apple-small {
+  top: 10.11px;
+  left: 79.22px;
+}
+
+.letter-n-2-apple-small {
+  top: 10.1px;
+  left: 84.67px;
+}
+
+.letter-t-apple {
+  top: 9.07px;
+  left: 91.91px;
+}
+
+.letter-h-apple {
+  top: 8.44px;
+  left: 95.7px
+}
+
+.letter-e-apple-small {
+  top: 10.11px;
+  left: 100.71px;
+}
+
+.letter-a-apple-big, .letter-p-1-apple-big, .letter-p-2-apple-big, .letter-s-apple-big, .letter-t-apple-big, .letter-o-apple-big, .letter-r-apple-big, .letter-e-apple-big {
+  position: absolute;
+}
+
+.letter-a-apple-big {
+  top: 18.08px;
+  left: 34.43px;
+}
+
+.letter-p-1-apple-big {
+  top: 21.35px;
+  left: 46.63px;
+}
+
+.letter-p-2-apple-big {
+  top: 21.35px;
+  left: 56.6px;
+}
+
+.letter-s-apple-big {
+  top: 17.87px;
+  left: 69.81px;
+}
+
+.letter-t-apple-big {
+  top: 19.3px;
+  left: 80.16px;
+}
+
+.letter-o-apple-big {
+  top: 21.33px;
+  left: 86.07px;
+}
+
+.letter-r-apple-big {
+  top: 21.35px;
+  left: 96.19px;
+}
+
+.letter-e-apple-big {
+  top: 21.33px;
+  left: 101.22px;
+}
+
+.apple-small-icon, .apple-big-icon {
+  position: absolute;
+}
+
+.apple-small-icon {
+  top: 8.72px;
+  left: 18.79px;
+}
+
+.apple-big-icon {
+  top: 13.97px;
+  left: 9.97px;
 }
 
 .advantages {
