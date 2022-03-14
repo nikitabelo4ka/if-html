@@ -4,6 +4,247 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+input {
+  margin: 0;
+  border: 0;
+}
+
+.block {
+  padding-top: 51px;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 934px;
+  background-size: 100%;
+}
+
+.block-container {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+
+.header {
+  margin: 0 104px 0 104px;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 205px;
+  height: 40px;
+}
+
+.right-header-content {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 48px;
+  width: 203px;
+  height: 30px;
+}
+
+.stays {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.stays:hover::after {
+  margin: 8px 0 0 4px;
+  display: block;
+  content: "";
+  background-color: #F5BD41;
+  width: 50px;
+  height: 4px;
+}
+
+.attractions:hover::after {
+  margin: 8px 0 0 4px;
+  display: block;
+  content: "";
+  background-color: #F5BD41;
+  width: 112px;
+  height: 4px;
+}
+
+.attractions {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.right-header-content-icons {
+  align-items: center;
+  display: flex;
+  width: 95px;
+  height: 40px;
+}
+
+.night-icon {
+  fill: #ffffff;
+  margin-right: 24px;
+}
+
+.account-icon {
+  fill: #ffffff;
+}
+
+.account-icon-link:hover .account-icon {
+  fill: #F5BD41;
+}
+
+.night-icon-link:hover .night-icon {
+  fill: #F5BD41;
+}
+
+.slogan {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: #ffffff;
+  margin: 202px 0 0 104px;
+}
+
+.booking-area {
+  margin: 100px 0 0 104px;
+}
+
+.input-lables {
+  margin:0 0 24px 24px;
+}
+
+.destination-label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.date-in-out-label {
+  margin-left: 221px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.inputs {
+  background-color: #ffffff;
+  width: 1223px;
+  border-radius: 8px;
+}
+
+.destination {
+  line-height: 21px;
+  border: 0;
+  padding: 24.5px 0 21px 24px;
+  width: 467px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.date-in-out {
+  border: 0;
+  line-height: 21px;
+  border-radius: 8px;
+  padding: 22px 3px 19px 21px;
+  width: 259px;
+  font-size: 18px;
+}
+
+.people-room {
+  border-radius: 8px;
+  border: 0;
+  padding: 24.5px 0 21px 24px;
+  width: 305px;
+  line-height: 21px;
+  font-size: 18px;
+}
+
+.destination:focus, .people-room:focus {
+  outline: none;
+  border: 3px solid #F5BD41;
+  padding: 21.5px 0 18px 21px;
+}
+
+.date-in-out:focus {
+  outline: none;
+  border: 3px solid #F5BD41;
+  padding: 19px 0 16px 18px;
+}
+
+.search {
+  padding: 21.5px 57px 24.5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+  background: #3077C6;
+  border: 0;
+  width: 192px;
+  line-height: 21px;
+  border-radius: 8px;
+}
+
+.applications-icons {
+  display: flex;
+  margin: 121px 0 120px 585px;
+}
+
+.google-play {
+  position: relative;
+}
+
+.google-play-border, .apple-backgr {
+  position: absolute;
+}
+
+.google-play-label, .google-play-logo, .get-it-on {
+  position: absolute;
+}
+
+.google-play-logo {
+  top: 7.15px;
+  left: 9.98px;
+}
+
+.get-it-on {
+  top: 6.87px;
+  left: 42.35px;
+}
+
+.google-play-label {
+  top: 17.05px;
+  left: 41.04px;
+}
+
+.apple {
+  margin-left: 17px;
+  position: relative;
+}
+
+.app-store, .download-apple {
+  position: absolute;
+}
+
+.download-apple {
+  top: 8.72px;
+  left: 35.67px;
+}
+
+.app-store {
+  top:  8.72px;
+  left: 9.97px;
 }
 
 .advantages {
