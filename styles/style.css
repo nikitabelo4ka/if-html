@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+input {
+  margin: 0;
+  border: 0;
+}
+
 .block {
   padding-top: 51px;
   background-image: url("../images/background.png");
@@ -86,9 +91,20 @@
 }
 
 .night-icon {
-  width: 30px;
-  height: 30px;
+  fill: #ffffff;
   margin-right: 24px;
+}
+
+.account-icon {
+  fill: #ffffff;
+}
+
+.account-icon-link:hover .account-icon {
+  fill: #F5BD41;
+}
+
+.night-icon-link:hover .night-icon {
+  fill: #F5BD41;
 }
 
 .slogan {
@@ -129,7 +145,7 @@
 }
 
 .destination {
-  line-height: 21.09px;
+  line-height: 21px;
   border: 0;
   padding: 24.5px 0 21px 24px;
   width: 467px;
@@ -139,9 +155,9 @@
 
 .date-in-out {
   border: 0;
-  line-height: 21.09px;
+  line-height: 21px;
   border-radius: 8px;
-  padding: 21.9px 3px 19.11px 21px;
+  padding: 22px 3px 19px 21px;
   width: 259px;
   font-size: 18px;
 }
@@ -151,7 +167,7 @@
   border: 0;
   padding: 24.5px 0 21px 24px;
   width: 305px;
-  line-height: 21.09px;
+  line-height: 21px;
   font-size: 18px;
 }
 
@@ -164,17 +180,7 @@
 .date-in-out:focus {
   outline: none;
   border: 3px solid #F5BD41;
-  padding: 18.9px 0 16.11px 18px;
-}
-
-.destination:hover, .people-room:hover {
-  border: 3px solid #F5BD41;
-  padding: 21.5px 0 18px 21px;
-}
-
-.date-in-out:hover {
-  border: 3px solid #F5BD41;
-  padding: 18.9px 0 16.11px 18px;
+  padding: 19px 0 16px 18px;
 }
 
 .search {
@@ -186,7 +192,7 @@
   background: #3077C6;
   border: 0;
   width: 192px;
-  line-height: 21.09px;
+  line-height: 21px;
   border-radius: 8px;
 }
 
