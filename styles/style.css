@@ -17,7 +17,7 @@ input {
   padding-top: 51px;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 934px;
+  min-height: 970px;
   background-size: 100%;
 }
 
@@ -201,6 +201,17 @@ input {
   margin: 121px 0 120px 585px;
 }
 
+.apple-picture {
+  margin-left: 17px;
+  width: 118px;
+  height: 38.5px;
+}
+
+.google-play-picture {
+  width: 135px;
+  height: 40px;
+}
+
 .advantages {
   height: 569px;
   padding-top: 120px;
@@ -247,21 +258,29 @@ input {
 }
 
 .icon-1 {
+  width: 75px;
+  height: 92px;
   display: block;
   margin: 4px auto 0;
 }
 
 .icon-2 {
+  width: 83.5px;
+  height: 83.5px;
   display: block;
   margin: 8px auto 0;
 }
 
 .icon-3 {
+  width: 100px;
+  height: 66.5px;
   display: block;
   margin: 17px auto 0;
 }
 
 .icon-4 {
+  width: 93.5px;
+  height: 83.5px;
   display: block;
   margin: 4px auto 0;
 }
