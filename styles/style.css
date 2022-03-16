@@ -12,16 +12,16 @@ input {
   border: 0;
 }
 
-.block {
+.main {
+  background: url("../images/backgrpund.svg");
   padding-top: 51px;
-  background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-position: center;
   min-height: 934px;
   background-size: 100%;
 }
 
-.block-container {
+.main-container {
   margin: 0 auto;
   width: 1440px;
 }
@@ -107,7 +107,7 @@ input {
   fill: #F5BD41;
 }
 
-.slogan {
+.main_title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 50px;
@@ -201,58 +201,18 @@ input {
   margin: 121px 0 120px 585px;
 }
 
-.google-play {
-  position: relative;
-}
-
-.google-play-border, .apple-backgr {
-  position: absolute;
-}
-
-.google-play-label, .google-play-logo, .get-it-on {
-  position: absolute;
-}
-
-.google-play-logo {
-  top: 7.15px;
-  left: 9.98px;
-}
-
-.get-it-on {
-  top: 6.87px;
-  left: 42.35px;
-}
-
-.google-play-label {
-  top: 17.05px;
-  left: 41.04px;
-}
-
-.apple {
-  margin-left: 17px;
-  position: relative;
-}
-
-.app-store, .download-apple {
-  position: absolute;
-}
-
-.download-apple {
-  top: 8.72px;
-  left: 35.67px;
-}
-
-.app-store {
-  top:  8.72px;
-  left: 9.97px;
-}
-
 .advantages {
   height: 569px;
+  padding-top: 120px;
+}
+
+.advantages-container {
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .advantages-label {
-  margin: 120px auto 0;
+  margin: 0 auto;
 }
 
 .advantages-label-name {
@@ -343,6 +303,10 @@ input {
   background: #10367C;
 }
 
+.footer-logo {
+  display: none;
+}
+
 .footer-container {
   margin: 0 auto;
   width: 1440px;
@@ -388,6 +352,7 @@ input {
 .signature {
   color: #ffffff;
   margin: 120px 0 120px 103px;
+  font-size: 12px;
 }
 
 .lists {
@@ -398,8 +363,103 @@ input {
 }
 
 .link {
-  font-size: 20px;
-  font-weight: 400;
   color: #ffffff;
   text-decoration: none;
+}
+
+@media screen and (max-width:1440px) {
+  .advantages-container, .footer-container {
+    width: 360px;
+  }
+
+  .advantages-label-name {
+    font-size: 28px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .advantages-elements {
+    width: 214px;
+    margin-top: 35px;
+  }
+
+  .element {
+    width: 214px;
+    height: 104px;
+    float: none;
+    display: block;
+  }
+
+  .advantages {
+    height: 641px;
+    padding-top: 24px;
+  }
+
+  .icon-1 {
+    width: 52.5px;
+    height: 64.5px;
+    margin: 0 auto 19px;
+  }
+
+  .icon-2 {
+    width: 58.5px;
+    height: 58.5px;
+    margin: 38px auto 22px;
+  }
+
+  .icon-3 {
+    width: 70px;
+    height: 47px;
+    margin: 44px auto 28px;
+  }
+
+  .icon-4 {
+    width: 64px;
+    height: 58.5px;
+    margin: 35px auto 25px;
+  }
+
+  .elements-name-1, .elements-name-2, .elements-name-3, .elements-name-4 {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .footer {
+    height: 203px;
+    padding-top: 40px;
+  }
+
+  .elem {
+    display: none;
+  }
+
+  .lists {
+    font-size: 15px;
+    width: 225px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .footer-logo {
+    width: 98px;
+    height: 19px;
+    display: block;
+    margin: 0 auto 40px;
+  }
+
+  .list-about, .list-property_types, .list-support {
+    margin: 0;
+
+  }
+
+  .signature {
+    width: 219px;
+    margin: 32px auto 40px;
+  }
+
+  .link {
+    text-decoration: underline;
+  }
 }
