@@ -8,16 +8,18 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>Lesson 4</title>
+    <title>Lesson 8</title>
   </head>
   <body>
     <div class="main">
-      <div class="main-container">
-        <div class="header">
-          <svg class="logo">
-            <use xlink:href="images/sprite.svg#logo_vector"></use>
-          </svg>
-          <nav class="right-header-content">
+      <div class="main-container col-s-12">
+        <div class="header col-s-12">
+          <div class="logo col-2 col-s-5">
+            <svg class="logo-icon">
+              <use xlink:href="images/sprite.svg#logo_vector"></use>
+            </svg>
+          </div>
+          <nav class="right-header-content col-s-6  ">
             <div class="links">
               <a class="stays" href="">Stays</a>
               <a class="attractions" href="">Attractions</a>
@@ -51,10 +53,24 @@
                   />
                 </svg>
               </a>
+              <a class="menu-icon-link" href="">
+                <svg
+                  class="menu-icon"
+                  width="24"
+                  height="16"
+                  viewBox="0 0 24 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 16H24V13.3333H0V16ZM0 9.33333H24V6.66667H0V9.33333ZM0 0V2.66667H24V0H0Z"
+                  />
+                </svg>
+              </a>
             </div>
           </nav>
         </div>
-        <h1 class="main_title">
+        <h1 class="main_title col-6 col-s-12">
           Discover stays <br />
           to live, work or just relax
         </h1>
@@ -86,52 +102,55 @@
               name="people-room"
               type="text"
               placeholder="2 Adults — 0 Children — 1 Room"
-            /><button type="submit" value="Search" class="search">Search</button>
+            /><button type="submit" value="Search" class="search">
+              Search
+            </button>
           </form>
         </div>
-        <div class="applications-icons">
+        <div class="applications-icons col-3 col-s-12">
           <div class="google-play">
-            <svg class="google-play-picture">
-              <use xlink:href="images/sprite.svg#google-play"
-              ></use>
-            </svg>
+            <img
+              class="google-play-picture"
+              src="images/google-play.png"
+              alt="google-play"
+            />
           </div>
           <div class="apple">
-            <svg class="apple-picture">
-              <use
-                xlink:href="images/sprite.svg#Download_on_the_App_Store"
-              ></use>
-            </svg>
+            <img
+              class="apple-picture"
+              src="images/app-store.png"
+              alt="app-store"
+            />
           </div>
         </div>
       </div>
     </div>
     <div class="advantages">
-      <div class="advantages-container">
+      <div class="advantages-container col-s-12">
         <div class="advantages-label">
           <p class="advantages-label-name">What do we offer</p>
           <hr class="line" />
         </div>
         <div class="advantages-elements">
-          <div class="element">
+          <div class="element col-3 col-s-12">
             <svg class="icon-1">
               <use xlink:href="images/sprite.svg#support"></use>
             </svg>
             <p class="elements-name-1">Support 24/7</p>
           </div>
-          <div class="element">
+          <div class="element col-3 col-s-12">
             <svg class="icon-2">
               <use xlink:href="images/sprite.svg#communicate"></use>
             </svg>
             <p class="elements-name-2">Communicate directly</p>
           </div>
-          <div class="element">
+          <div class="element col-3 col-s-12">
             <svg class="icon-3">
               <use xlink:href="images/sprite.svg#online"></use>
             </svg>
             <p class="elements-name-3">Book online</p>
           </div>
-          <div class="element">
+          <div class="element col-3 col-s-12">
             <svg class="icon-4">
               <use xlink:href="images/sprite.svg#reviews"></use>
             </svg>
@@ -141,12 +160,12 @@
       </div>
     </div>
     <div class="footer">
-      <div class="footer-container">
-        <svg class="footer-logo">
-          <use xlink:href="images/sprite.svg#logo_vector (2)"></use>
+      <div class="footer-container col-s-12">
+        <svg class="footer-logo col-s-12">
+          <use xlink:href="images/sprite.svg#footer-logo-mobile"></use>
         </svg>
         <div class="lists">
-          <ul class="list-about">
+          <ul class="list-about col-4 col-s-3">
             <li class="about"><a class="link" href="">About</a></li>
             <li class="elem">
               <a class="link" href="">How Triphouse works</a>
@@ -155,7 +174,7 @@
             <li class="elem"><a class="link" href="">Privacy</a></li>
             <li class="elem"><a class="link" href="">Terms</a></li>
           </ul>
-          <ul class="list-property_types">
+          <ul class="list-property_types col-3 col-s-6">
             <li class="property_types">
               <a class="link" href="">Property types</a>
             </li>
@@ -166,7 +185,7 @@
             <li class="elem"><a class="link" href="">Holiday homes</a></li>
             <li class="elem"><a class="link" href="">Hostels</a></li>
           </ul>
-          <ul class="list-support">
+          <ul class="list-support col-5 col-s-3">
             <li class="support"><a class="link" href="">Support</a></li>
             <li class="elem">
               <a class="link" href="">Contact Customer Service</a>
@@ -174,7 +193,9 @@
             <li class="elem"><a class="link" href="">FAQ</a></li>
           </ul>
         </div>
-        <p class="signature">&#169; 2020 Triphous, Inc. All rights reserved</p>
+        <div class="signature col-s-12">
+          &#169; 2020 Triphous, Inc. All rights reserved
+        </div>
       </div>
     </div>
   </body>

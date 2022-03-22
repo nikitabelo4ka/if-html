@@ -13,22 +13,23 @@ input {
 }
 
 .main {
-  background: url("../images/backgrpund.svg");
+  display: flex;
+  justify-content: center;
+  background: url("../images/background.png");
   padding-top: 51px;
   background-repeat: no-repeat;
-  background-position: center;
   min-height: 970px;
   background-size: 100%;
 }
 
 .main-container {
-  margin: 0 auto;
   width: 1440px;
 }
 
 
 .header {
-  margin: 0 104px 0 104px;
+  margin: 0 104px 0;
+  width: 1232px;
   height: 46px;
   display: flex;
   justify-content: space-between;
@@ -39,15 +40,21 @@ input {
   height: 40px;
 }
 
+.logo-icon {
+  width: 205px;
+  height: 40px;
+}
+
 .right-header-content {
   display: flex;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  align-items: center;
+  justify-content: flex-end;
+
 }
 
 .links {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
   display: flex;
   justify-content: space-between;
   margin-right: 48px;
@@ -84,10 +91,15 @@ input {
 }
 
 .right-header-content-icons {
+  justify-content: center;
   align-items: center;
   display: flex;
-  width: 95px;
   height: 40px;
+}
+
+.menu-icon {
+  fill: #ffffff;
+  margin-left: 16px;
 }
 
 .night-icon {
@@ -97,6 +109,10 @@ input {
 
 .account-icon {
   fill: #ffffff;
+}
+
+.menu-icon-link:hover .menu-icon {
+  fill: #F5BD41;
 }
 
 .account-icon-link:hover .account-icon {
@@ -213,7 +229,6 @@ input {
 }
 
 .advantages {
-  height: 569px;
   padding-top: 120px;
 }
 
@@ -223,7 +238,8 @@ input {
 }
 
 .advantages-label {
-  margin: 0 auto;
+  display: block;
+  justify-content: center;
 }
 
 .advantages-label-name {
@@ -242,19 +258,19 @@ input {
 }
 
 .advantages-elements {
-  width: 1120px;
-  margin: 104px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 104px;
+  padding: 0 80px;
+}
+
+.element {
+  margin-bottom: 122px;
 }
 
 .elements-name {
   margin: 52px 0 0 0;
-}
-
-.element {
-  display: inline-block;
-  width: 25%;
-  height: 176px;
-  float: left;
 }
 
 .icon-1 {
@@ -318,17 +334,26 @@ input {
 }
 
 .footer {
-  height: 630px;
   background: #10367C;
+}
+
+.footer-container {
+  flex-wrap: wrap;
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .footer-logo {
   display: none;
 }
 
-.footer-container {
-  margin: 0 auto;
+.lists {
   width: 1440px;
+  display: flex;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .elem {
@@ -336,35 +361,21 @@ input {
 }
 
 .list-about {
-  flex-direction: column;
   list-style: none;
-  display: inline-block;
-  margin: 120px 0 0 104px;
+  padding: 120px 0 0 104px;
 }
 
 .list-property_types {
-  flex-direction: column;
   list-style: none;
-  display: inline-block;
-  margin: 120px 0 0 223px;
+  padding: 120px 0 0 40px;
 }
 
 .list-support {
-  flex-direction: column;
   list-style: none;
-  display: inline-block;
-  margin: 120px 0 0 282px;
+  padding: 120px 0 0 95px;
 }
 
-.about {
-  font-weight: 500;
-}
-
-.property_types {
-  font-weight: 500;
-}
-
-.support {
+.about, .property_types, .support {
   font-weight: 500;
 }
 
@@ -374,80 +385,190 @@ input {
   font-size: 12px;
 }
 
-.lists {
-  display: flex;
-  font-size: 20px;
-  font-weight: 400;
-  color: #ffffff;
-}
-
 .link {
   color: #ffffff;
   text-decoration: none;
 }
 
-@media screen and (max-width:1440px) {
-  .advantages-container, .footer-container {
-    width: 360px;
+@media screen and (min-width: 768px) {
+  /*For Desktop*/
+
+  .menu-icon {
+    display: none;
   }
 
-  .advantages-label-name {
+  .destination {
+    width: calc(100% / 12 * 5 - 43px);
+  }
+
+  .date-in-out {
+    width: calc(100% / 12 * 2 + 55.5px);
+  }
+
+  .people-room {
+    width: calc(100% / 12 * 3 - 1px);
+  }
+
+  .search {
+    width: calc(100% / 12 * 2 - 11.5px);
+  }
+
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .right-header-content-icons {
+    padding-right: 12px;
+  }
+
+  .main {
+    background-size: cover;
+    padding: 0;
+    min-height: 590px;
+  }
+
+  .menu-icon {
+    width: 24px;
+    height: 16px;
+  }
+
+  .logo-icon {
+    width: 122px;
+    height: 24px;
+  }
+
+  .night-icon {
+    margin-right: 16px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .account-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .menu-link {
+    display: block;
+  }
+
+  .main-container {
+    justify-content: center;
+  }
+
+  .main_title {
+    padding: 52px 12px 0 12px;
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .header {
+    margin: 0;
+    padding: 12px 12px 0 12px;
+  }
+
+  .advantages-label {
     font-size: 28px;
+  }
+
+  .booking-area {
+    margin: 0;
+    padding: 31px 12px 0 12px;
+  }
+
+  .inputs {
+    width: 328px;
+    height: 232px;
+    border-radius: 0;
+    background-color: #F5BD41;
+  }
+
+  .input-lables {
+    display: none;
+  }
+
+  .destination, .date-in-out, .people-room {
+    margin: 8px 8px 0 8px;
+    font-size: 15px;
+    width: calc(100% / 12 * 11 + 11.5px);
+    height: 48px;
+  }
+
+  .search {
+    line-height: 22px;
+    margin: 8px;
+    width: calc(100% / 12 * 11 + 11.5px);
+    height: 48px;
+    font-size: 19px;
+    padding: 14px 125px;
+  }
+
+  .applications-icons {
+    justify-content: center;
+    margin: 32px 0 0;
   }
 
   .line {
     display: none;
   }
 
-  .advantages-elements {
-    width: 214px;
-    margin-top: 35px;
-  }
-
   .element {
-    width: 214px;
-    height: 104px;
-    float: none;
-    display: block;
-  }
-
-  .advantages {
-    height: 641px;
-    padding-top: 24px;
-  }
-
-  .icon-1 {
-    width: 52.5px;
-    height: 64.5px;
-    margin: 0 auto 19px;
-  }
-
-  .icon-2 {
-    width: 58.5px;
-    height: 58.5px;
-    margin: 38px auto 22px;
-  }
-
-  .icon-3 {
-    width: 70px;
-    height: 47px;
-    margin: 44px auto 28px;
-  }
-
-  .icon-4 {
-    width: 64px;
-    height: 58.5px;
-    margin: 35px auto 25px;
+    margin-bottom: 38.5px;
   }
 
   .elements-name-1, .elements-name-2, .elements-name-3, .elements-name-4 {
-    margin: 0;
     font-size: 15px;
-  }
-
-  .footer {
-    height: 203px;
-    padding-top: 40px;
   }
 
   .elem {
@@ -455,30 +576,85 @@ input {
   }
 
   .lists {
-    font-size: 15px;
+    text-align: center;
     width: 225px;
-    justify-content: space-between;
-    margin: 0 auto;
+  }
+
+  .about, .property_types, .support {
+    text-decoration: underline;
+    font-size: 15px;
+  }
+
+  .about, .property_types {
+    margin-right: 8px;
+  }
+
+  .list-about, .list-support, .list-property_types {
+    padding: 0;
   }
 
   .footer-logo {
-    width: 98px;
     height: 19px;
     display: block;
-    margin: 0 auto 40px;
+    margin: 40px auto 40px;
   }
 
-  .list-about, .list-property_types, .list-support {
-    margin: 0;
-
+  .footer-container {
+    align-items: center;
+    flex-direction: column;
   }
 
   .signature {
-    width: 219px;
-    margin: 32px auto 40px;
+    text-align: center;
+    margin: 32px 0 40px;
   }
 
-  .link {
-    text-decoration: underline;
+  .col-s-1 {
+    width: 8.33%;
   }
+
+  .col-s-2 {
+    width: 16.66%;
+  }
+
+  .col-s-3 {
+    width: 25%;
+  }
+
+  .col-s-4 {
+    width: 33.33%;
+  }
+
+  .col-s-5 {
+    width: 41.66%;
+  }
+
+  .col-s-6 {
+    width: 50%;
+  }
+
+  .col-s-7 {
+    width: 58.33%
+  }
+
+  .col-s-8 {
+    width: 66.66%;
+  }
+
+  .col-s-9 {
+    width: 75%;
+  }
+
+  .col-s-10 {
+    width: 83.33%;
+  }
+
+  .col-s-11 {
+    width: 91.66%;
+  }
+
+  .col-s-12 {
+    width: 100%;
+  }
+
 }
