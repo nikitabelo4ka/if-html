@@ -15,20 +15,19 @@ input {
 .main {
   display: flex;
   justify-content: center;
-  background: url("../images/background.png");
+  background: url("../images/background.png") no-repeat;
   padding-top: 51px;
-  background-repeat: no-repeat;
-  min-height: 970px;
+  min-height: 935px;
   background-size: 100%;
 }
 
 .main-container {
+  margin: 0 auto;
   width: 1440px;
 }
 
-
 .header {
-  margin: 0 104px 0;
+  margin: 0 auto 0;
   width: 1232px;
   height: 46px;
   display: flex;
@@ -48,7 +47,6 @@ input {
 .right-header-content {
   display: flex;
   justify-content: flex-end;
-
 }
 
 .links {
@@ -68,19 +66,31 @@ input {
 }
 
 .stays:hover::after {
+  opacity: 1;
+}
+
+.stays::after {
+  transition: all 0.5s ease-out;
+  opacity: 0;
   margin: 8px 0 0 4px;
   display: block;
   content: "";
-  background-color: #F5BD41;
+  background-color: #f5bd41;
   width: 50px;
   height: 4px;
 }
 
 .attractions:hover::after {
+  opacity: 1;
+}
+
+.attractions::after {
+  transition: all 0.5s ease-out;
+  opacity: 0;
   margin: 8px 0 0 4px;
   display: block;
   content: "";
-  background-color: #F5BD41;
+  background-color: #f5bd41;
   width: 112px;
   height: 4px;
 }
@@ -98,29 +108,32 @@ input {
 }
 
 .menu-icon {
+  transition: fill 0.5s ease-out;
   fill: #ffffff;
   margin-left: 16px;
 }
 
 .night-icon {
+  transition: fill 0.5s ease-out;
   fill: #ffffff;
   margin-right: 24px;
 }
 
 .account-icon {
+  transition: fill 0.5s ease-out;
   fill: #ffffff;
 }
 
 .menu-icon-link:hover .menu-icon {
-  fill: #F5BD41;
+  fill: #f5bd41;
 }
 
 .account-icon-link:hover .account-icon {
-  fill: #F5BD41;
+  fill: #f5bd41;
 }
 
 .night-icon-link:hover .night-icon {
-  fill: #F5BD41;
+  fill: #f5bd41;
 }
 
 .main_title {
@@ -136,7 +149,7 @@ input {
 }
 
 .input-lables {
-  margin:0 0 24px 24px;
+  margin: 0 0 24px 24px;
 }
 
 .destination-label {
@@ -156,7 +169,7 @@ input {
 
 .inputs {
   background-color: #ffffff;
-  width: 1223px;
+  width: 1222.5px;
   border-radius: 8px;
 }
 
@@ -187,15 +200,16 @@ input {
   font-size: 18px;
 }
 
-.destination:focus, .people-room:focus {
+.destination:focus,
+.people-room:focus {
   outline: none;
-  border: 3px solid #F5BD41;
+  border: 3px solid #f5bd41;
   padding: 21.5px 0 18px 21px;
 }
 
 .date-in-out:focus {
   outline: none;
-  border: 3px solid #F5BD41;
+  border: 3px solid #f5bd41;
   padding: 19px 0 16px 18px;
 }
 
@@ -205,7 +219,7 @@ input {
   font-weight: 500;
   font-size: 24px;
   color: #ffffff;
-  background: #3077C6;
+  background: #3077c6;
   border: 0;
   width: 192px;
   line-height: 21px;
@@ -238,23 +252,26 @@ input {
 }
 
 .advantages-label {
-  display: block;
-  justify-content: center;
-}
-
-.advantages-label-name {
-  font-weight: 500;
-  font-size: 40px;
   display: flex;
   justify-content: center;
 }
 
-.line {
-  width: 100px;
+.advantages-label-name {
+  width: 306px;
+  font-weight: 500;
+  font-size: 40px;
+  display: block;
+  justify-content: center;
+}
+
+.advantages-label-name::after {
+  display: block;
+  content: "";
   background-color: #f5bd41;
-  margin: 20px auto 0;
+  width: 100px;
   height: 4px;
   border: 0;
+  margin: 20px auto 0;
 }
 
 .advantages-elements {
@@ -334,7 +351,7 @@ input {
 }
 
 .homes-guests-loves {
-  background-color: #EAF0F9;
+  background-color: #eaf0f9;
   padding-top: 120px;
 }
 
@@ -359,18 +376,21 @@ input {
 .homes-guests-loves-elements {
   width: 1257px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: 105px auto 0;
   position: relative;
 }
 
-.hotel-leopold-element, .apartment_sunshine-element, .villa-kunerad-element, .hostel-friendship-element {
+.hotel-leopold-element,
+.apartment_sunshine-element,
+.villa-kunerad-element,
+.hostel-friendship-element {
   margin-bottom: 120px;
 }
 
 .arrow {
-  top: 128px;
-  left: 1228px;
+  top: 24%;
+  left: 98%;
   position: absolute;
   width: 40px;
   height: 40px;
@@ -404,37 +424,49 @@ input {
   margin: 0 auto;
 }
 
-.hotel-leopold-link, .apartment_sunshine-link, .villa-kunerad-link, .hostel-friendship-link {
+.hotel-leopold-link,
+.apartment_sunshine-link,
+.villa-kunerad-link,
+.hostel-friendship-link {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
   text-decoration: none;
-  color: #3077C6;
+  color: #3077c6;
   display: flex;
   margin: 24px auto 0;
   justify-content: flex-start;
 }
 
-.hotel-leopold-link, .villa-kunerad-link, .hotel-leopold-location, .villa-kunerad-location {
-  width: calc(100% / 12 * 11 + 8px);
+.hotel-leopold-link,
+.villa-kunerad-link,
+.hotel-leopold-location,
+.villa-kunerad-location {
+  width: 296px;
 }
 
-.apartment_sunshine-link, .hostel-friendship-link, .apartment_sunshine-location, .hostel-friendship-location {
-  width: calc(100% / 12 * 11 + 7px);
+.apartment_sunshine-link,
+.hostel-friendship-link,
+.apartment_sunshine-location,
+.hostel-friendship-location {
+  width: 295px;
 }
 
-.hotel-leopold-location, .apartment_sunshine-location, .villa-kunerad-location, .hostel-friendship-location {
+.hotel-leopold-location,
+.apartment_sunshine-location,
+.villa-kunerad-location,
+.hostel-friendship-location {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #BFBFBF;
+  color: #bfbfbf;
   margin: 24px auto 0;
   display: flex;
   justify-content: flex-start;
 }
 
 .footer {
-  background: #10367C;
+  background: #10367c;
 }
 
 .footer-container {
@@ -475,7 +507,9 @@ input {
   padding: 120px 0 0 95px;
 }
 
-.about, .property_types, .support {
+.about,
+.property_types,
+.support {
   font-weight: 500;
 }
 
@@ -490,7 +524,7 @@ input {
   text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   /*For Desktop*/
 
   .menu-icon {
@@ -538,7 +572,7 @@ input {
   }
 
   .col-7 {
-    width: 58.33%
+    width: 58.33%;
   }
 
   .col-8 {
@@ -560,7 +594,117 @@ input {
   .col-12 {
     width: 100%;
   }
+}
 
+@media screen and (max-width: 1440px) {
+  .main {
+    min-height: 750px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .header {
+    margin: 0 auto;
+  }
+
+  .main_title {
+    margin: 120px 0 0 auto;
+    font-size: 35px;
+  }
+
+  .booking-area {
+    margin: 50px 0 0 auto;
+  }
+
+  .inputs {
+    flex-wrap: wrap;
+    max-width: 1222.5px;
+    margin: 0 auto 0 0;
+  }
+
+  .input-lables {
+    display: flex;
+  }
+
+  .destination-label,
+  .date-in-out-label {
+    font-size: 15px;
+    display: block;
+  }
+
+  .date-in-out-label {
+    margin-left: 0;
+  }
+
+  .destination,
+  .date-in-out,
+  .people-room {
+    font-size: 15px;
+  }
+
+  .applications-icons {
+    margin: 50px auto 0;
+  }
+
+  .hotel-leopold-element,
+  .apartment_sunshine-element {
+    margin-bottom: 60px;
+  }
+
+  .arrow {
+    top: 37%;
+    left: 89%;
+  }
+
+  .col-m-1 {
+    width: 8.33%;
+  }
+
+  .col-m-2 {
+    width: 16.66%;
+  }
+
+  .col-m-3 {
+    width: 25%;
+  }
+
+  .col-m-4 {
+    width: 33.33%;
+  }
+
+  .col-m-5 {
+    width: 41.66%;
+  }
+
+  .col-m-6 {
+    width: 50%;
+  }
+
+  .col-m-7 {
+    width: 58.33%;
+  }
+
+  .col-m-8 {
+    width: 66.66%;
+  }
+
+  .col-m-9 {
+    width: 75%;
+  }
+
+  .col-m-10 {
+    width: 83.33%;
+  }
+
+  .col-m-11 {
+    width: 91.66%;
+  }
+
+  .col-m-12 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -599,7 +743,7 @@ input {
     display: none;
   }
 
-  .menu-link {
+  .menu-icon {
     display: block;
   }
 
@@ -608,8 +752,9 @@ input {
   }
 
   .main_title {
+    width: 350px;
     padding: 52px 12px 0 12px;
-    margin: 0;
+    margin: 0 auto;
     font-size: 30px;
   }
 
@@ -623,22 +768,25 @@ input {
   }
 
   .booking-area {
-    margin: 0;
+    margin: 0 auto;
     padding: 31px 12px 0 12px;
   }
 
   .inputs {
+    margin: 0 auto;
     width: 328px;
     height: 232px;
     border-radius: 0;
-    background-color: #F5BD41;
+    background-color: #f5bd41;
   }
 
   .input-lables {
     display: none;
   }
 
-  .destination, .date-in-out, .people-room {
+  .destination,
+  .date-in-out,
+  .people-room {
     margin: 8px 8px 0 8px;
     font-size: 15px;
     width: calc(100% / 12 * 11 + 11.5px);
@@ -667,7 +815,10 @@ input {
     margin-bottom: 38.5px;
   }
 
-  .elements-name-1, .elements-name-2, .elements-name-3, .elements-name-4 {
+  .elements-name-1,
+  .elements-name-2,
+  .elements-name-3,
+  .elements-name-4 {
     font-size: 15px;
   }
 
@@ -675,11 +826,13 @@ input {
     display: none;
   }
 
-  .villa-kunerad-element, .hostel-friendship-element {
+  .villa-kunerad-element,
+  .hostel-friendship-element {
     display: none;
   }
 
-  .hotel-leopold-icon, .apartment-sunshine-icon {
+  .hotel-leopold-icon,
+  .apartment-sunshine-icon {
     width: 156px;
     height: 155px;
   }
@@ -696,7 +849,8 @@ input {
     margin-top: 32px;
   }
 
-  .hotel-leopold-element, .apartment_sunshine-element {
+  .hotel-leopold-element,
+  .apartment_sunshine-element {
     margin-bottom: 40px;
     width: calc(100% / 12 * 6 - 24px);
   }
@@ -710,24 +864,29 @@ input {
     margin-right: 15px;
   }
 
-  .hotel-leopold-location, .apartment_sunshine-location, .hotel-leopold-link, .apartment_sunshine-link {
+  .hotel-leopold-location,
+  .apartment_sunshine-location,
+  .hotel-leopold-link,
+  .apartment_sunshine-link {
     font-size: 12px;
-    width: calc(100% / 12 * 11 - 9px);
+    width: 156px;
   }
 
-  .hotel-leopold-link, .apartment_sunshine-link {
-    margin: 8px 0 0 0;
+  .hotel-leopold-link,
+  .apartment_sunshine-link {
+    margin: 8px auto 0;
   }
 
-  .hotel-leopold-location, .apartment_sunshine-location {
-    margin: 4px 0 0 0;
+  .hotel-leopold-location,
+  .apartment_sunshine-location {
+    margin: 4px auto 0;
   }
 
   .arrow {
     width: 28px;
     height: 28px;
-    left: 328px;
-    top: 58px;
+    left: 92%;
+    top: 28%;
   }
 
   .lists {
@@ -735,16 +894,21 @@ input {
     width: 225px;
   }
 
-  .about, .property_types, .support {
+  .about,
+  .property_types,
+  .support {
     text-decoration: underline;
     font-size: 15px;
   }
 
-  .about, .property_types {
+  .about,
+  .property_types {
     margin-right: 8px;
   }
 
-  .list-about, .list-support, .list-property_types {
+  .list-about,
+  .list-support,
+  .list-property_types {
     padding: 0;
   }
 
@@ -789,7 +953,7 @@ input {
   }
 
   .col-s-7 {
-    width: 58.33%
+    width: 58.33%;
   }
 
   .col-s-8 {
@@ -811,5 +975,4 @@ input {
   .col-s-12 {
     width: 100%;
   }
-
 }
