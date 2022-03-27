@@ -12,14 +12,14 @@
   </head>
   <body>
     <div class="main">
-      <div class="main-container col-s-12">
-        <div class="header col-s-12">
+      <div class="main-container col-m-12 col-s-12">
+        <div class="header col-m-10 col-s-12">
           <div class="logo col-2 col-s-5">
             <svg class="logo-icon">
               <use xlink:href="images/sprite.svg#logo_vector"></use>
             </svg>
           </div>
-          <nav class="right-header-content col-s-6  ">
+          <nav class="right-header-content col-s-6">
             <div class="links">
               <a class="stays" href="">Stays</a>
               <a class="attractions" href="">Attractions</a>
@@ -70,44 +70,44 @@
             </div>
           </nav>
         </div>
-        <h1 class="main_title col-6 col-s-12">
+        <h1 class="main_title col-m-11 col-6">
           Discover stays <br />
           to live, work or just relax
         </h1>
-        <div class="booking-area">
-          <div class="input-lables">
-            <label class="destination-label" for="destination"
+        <div class="booking-area col-m-11">
+          <div class="input-lables col-m-11">
+            <label class="destination-label col-m-4" for="destination"
               >Your destination or hotel name</label
             >
-            <label class="date-in-out-label" for="date"
+            <label class="date-in-out-label col-m-8" for="date"
               >Check-in — Check-out</label
             >
             <label class="people-room-label" for="people-room"></label>
           </div>
-          <form class="inputs" action="/" method="GET">
+          <form class="inputs col-m-11" action="/" method="GET">
             <input
-              class="destination"
+              class="destination col-m-4"
               id="destination"
               name="destination"
               type="text"
               placeholder=" New York"
             /><input
-              class="date-in-out"
+              class="date-in-out col-m-3"
               id="date"
               name="date-in-out"
               type="date"
             /><input
-              class="people-room"
+              class="people-room col-m-5"
               id="people-room"
               name="people-room"
               type="text"
               placeholder="2 Adults — 0 Children — 1 Room"
-            /><button type="submit" value="Search" class="search">
+            /><button type="submit" value="Search" class="search col-m-12">
               Search
             </button>
           </form>
         </div>
-        <div class="applications-icons col-3 col-s-12">
+        <div class="applications-icons col-3 col-m-4 col-s-12">
           <div class="google-play">
             <img
               class="google-play-picture"
@@ -126,41 +126,91 @@
       </div>
     </div>
     <div class="advantages">
-      <div class="advantages-container col-s-12">
+      <div class="advantages-container col-m-12 col-s-12">
         <div class="advantages-label">
-          <p class="advantages-label-name">What do we offer</p>
-          <hr class="line" />
+          <h2 class="advantages-label-name">What do we offer</h2>
         </div>
-        <div class="advantages-elements">
-          <div class="element col-3 col-s-12">
+        <div class="advantages-elements col-m-12">
+          <div class="element col-3 col-m-6 col-s-12">
             <svg class="icon-1">
               <use xlink:href="images/sprite.svg#support"></use>
             </svg>
             <p class="elements-name-1">Support 24/7</p>
           </div>
-          <div class="element col-3 col-s-12">
+          <div class="element col-3 col-m-6 col-s-12">
             <svg class="icon-2">
               <use xlink:href="images/sprite.svg#communicate"></use>
             </svg>
             <p class="elements-name-2">Communicate directly</p>
           </div>
-          <div class="element col-3 col-s-12">
+          <div class="element col-3 col-m-6 col-s-12">
             <svg class="icon-3">
               <use xlink:href="images/sprite.svg#online"></use>
             </svg>
             <p class="elements-name-3">Book online</p>
           </div>
-          <div class="element col-3 col-s-12">
+          <div class="element col-3 col-m-6 col-s-12">
             <svg class="icon-4">
-              <use xlink:href="images/sprite.svg#reviews"></use>
+              <use xlink:href="images/sprite.svg#review"></use>
             </svg>
             <p class="elements-name-4">Real guest reviews</p>
           </div>
         </div>
       </div>
     </div>
+    <div class="homes-guests-loves">
+      <div class="homes-guests-loves-container col-m-12 col-s-12">
+        <div class="homes-guests-loves-label">
+          <h2 class="homes-guests-loves-label-name">Homes guests loves</h2>
+        </div>
+        <div class="homes-guests-loves-elements col-m-12 col-s-12">
+          <div class="hotel-leopold-element col-m-6 col-3">
+            <img
+              class="hotel-leopold-icon"
+              src="images/Hotel_Leopold.png"
+              alt="Hotel Leopold image"
+            />
+            <a class="hotel-leopold-link" href="">Hotel Leopold</a>
+            <p class="hotel-leopold-location">Saint Petersburg, Russia</p>
+          </div>
+          <div class="apartment_sunshine-element col-m-6 col-3">
+            <img
+              class="apartment-sunshine-icon"
+              src="images/Apartment_Sunshine.png"
+              alt="Apartment Sunshine image"
+            />
+            <a class="apartment_sunshine-link" href="">Apartment Sunshine</a>
+            <p class="apartment_sunshine-location">
+              Santa Cruz de Tenerife,<br />
+              Spain
+            </p>
+          </div>
+          <div class="villa-kunerad-element col-m-6 col-3">
+            <img
+              class="villa-kunerad-icon"
+              src="images/Villa_Kunerad.png"
+              alt="Villa Kunerad image"
+            />
+            <a class="villa-kunerad-link" href="">Villa Kunerad</a>
+            <p class="villa-kunerad-location">Vysokie Tatry, Slowakia</p>
+          </div>
+          <div class="hostel-friendship-element col-m-6 col-3">
+            <img
+              class="hostel-friendship-icon"
+              src="images/Hostel_Friendship.png"
+              alt="Hostel Friendship image"
+            />
+            <a class="hostel-friendship-link" href="">Hostel Friendship</a>
+            <p class="hostel-friendship-location">Berlin, Germany</p>
+          </div>
+          <svg class="arrow">
+            <use xlink:href="images/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
     <div class="footer">
-      <div class="footer-container col-s-12">
+      <div class="footer-container col-m-12 col-s-12">
         <svg class="footer-logo col-s-12">
           <use xlink:href="images/sprite.svg#footer-logo-mobile"></use>
         </svg>
