@@ -465,6 +465,233 @@ input {
   justify-content: flex-start;
 }
 
+.the-best-destinations {
+  padding-top: 120px;
+  position: relative;
+}
+
+.the-best-destinations-container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.the-best-destinations-label {
+  display: flex;
+  justify-content: center;
+}
+
+.the-best-destinations-label-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.the-best-destinations-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 104px 0 66px 100px;
+  width: calc(100% / 12 * 5 + 22px);
+  border-radius: 8px;
+  background-color: #F3F3F4;
+}
+
+.button-regions, .button-cities {
+  padding: 17px 52px;
+  border-radius: 8px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  background-color: #F3F3F4;
+  border: 0;
+  width: 192px;
+  height: 64px;
+}
+
+.button-places-of-interest {
+  padding: 17px 25px;
+  border-radius: 8px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  background-color: #F3F3F4;
+  border: 0;
+  width: 238px;
+  height: 64px;
+}
+
+.button-places-of-interest:focus, .button-cities:focus, .button-regions:focus {
+  background-color: #3077C6;
+  color: #ffffff;
+}
+
+.the-best-destinations-elements {
+  display: flex;
+  width: 1257px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.maldives-icon, .spain-icon, .norway-icon, .island-icon {
+  width: 296px;
+  height: 296px;
+  margin: 0 auto;
+  display: block;
+}
+
+.maldives-link, .spain-link, .norway-link, .island-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-decoration: none;
+  color: #3077C6;
+  margin: 25px auto 0;
+  width: 296px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.maldives-element, .spain-element, .norway-element, .island-element {
+  position: relative;
+}
+
+.book-now-island, .book-now-maldives, .book-now-norway, .book-now-spain {
+  cursor: pointer;
+  display: none;
+  width: 128px;
+  height: 48px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #3077C6;
+  border: 1px solid #3077C6;
+  border-radius: 8px;
+  position: absolute;
+}
+
+.maldives-element:hover .book-now-maldives {
+  display: block;
+  top: 36%;
+  left: 30%;
+}
+
+.spain-element:hover .book-now-spain {
+  display: block;
+  top: 36%;
+  left: 30%;
+}
+
+.norway-element:hover .book-now-norway {
+  display: block;
+  top: 36%;
+  left: 30%;
+}
+
+.island-element:hover .book-now-island {
+  display: block;
+  top: 36%;
+  left: 30%;
+}
+
+.maldives-icon-wrapper {
+  position: relative;
+}
+
+.spain-icon-wrapper {
+  position: relative;
+}
+
+.norway-icon-wrapper {
+  position: relative;
+}
+
+.island-icon-wrapper {
+  position: relative;
+}
+
+.maldives-element:hover .shadow {
+  display: block;
+}
+
+.spain-element:hover .shadow {
+  display: block;
+}
+
+.norway-element:hover .shadow {
+  display: block;
+}
+
+.island-element:hover .shadow {
+  display: block;
+}
+
+.shadow {
+  top: 0;
+  left: 2.5%;
+  display: none;
+  background-color: rgba(56, 56, 56, 0.4);
+  width: 296px;
+  height: 296px;
+  position: absolute;
+}
+
+.arrow-h {
+  position: absolute;
+  top: 69%;
+  left: 49%;
+  width: 40px;
+  height: 40px;
+}
+
+.the-best-destinations-arrow {
+  display: none;
+}
+
+.offer {
+  position: relative;
+  display: flex;
+  background-color: #EAF0F9;
+  margin: 201px auto 0;
+  width: calc(100% / 12 * 10 + 32px);
+}
+
+.sign-up {
+  margin: 51px 0 0 24px;
+}
+
+.user-icon {
+  width: 86px;
+  height: 86px;
+  margin: 57px 0 57px 24px;
+}
+
+.sign-up-text {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.sign-up-button {
+  margin-top: 21px;
+  border-radius: 8px;
+  border: 1px solid #3077C6;
+  background-color: #ffffff;
+  color: #3077C6;
+  font-weight: 400;
+  font-size: 18px;
+  width: 128px;
+  height: 48px;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10%;
+  left: 95.5%;
+  width: 26px;
+  height: 26px;
+}
+
 .footer {
   background: #10367c;
 }
@@ -653,9 +880,61 @@ input {
     margin-bottom: 60px;
   }
 
+  .norway-element, .island-element {
+    margin-top: 40px;
+  }
+
+  .the-best-destinations-buttons {
+    margin: 104px auto 66px;
+  }
+
+  .maldives-element:hover .book-now-maldives {
+    display: none;
+  }
+
+  .spain-element:hover .book-now-spain {
+    display: none;
+  }
+
+  .norway-element:hover .book-now-norway {
+    display: none;
+  }
+
+  .island-element:hover .book-now-island {
+    display: none;
+  }
+
+  .maldives-element:hover .shadow {
+    display: none;
+  }
+
+  .spain-element:hover .shadow {
+    display: none;
+  }
+
+  .norway-element:hover .shadow {
+    display: none;
+  }
+
+  .island-element:hover .shadow {
+    display: none;
+  }
+
+  .offer {
+    margin-top: 120px;
+  }
+
   .arrow {
     top: 37%;
     left: 89%;
+  }
+
+  .arrow-h {
+    top: 79%;
+  }
+
+  .of-interest {
+    display: none;
   }
 
   .col-m-1 {
@@ -882,6 +1161,14 @@ input {
     margin: 4px auto 0;
   }
 
+  .maldives-element:hover .shadow {
+    display: none;
+  }
+
+  .spain-element:hover .shadow {
+    display: none;
+  }
+
   .arrow {
     width: 28px;
     height: 28px;
@@ -926,6 +1213,132 @@ input {
   .signature {
     text-align: center;
     margin: 32px 0 40px;
+  }
+
+  .advantages {
+    padding-top: 24px;
+  }
+
+  .element {
+    margin-bottom: 35px;
+  }
+
+  .elements-name-1 {
+    margin-top: 19px;
+  }
+
+  .elements-name-2 {
+    margin-top: 22px;
+  }
+
+  .elements-name-3 {
+    margin-top: 27.5px;
+  }
+
+  .elements-name-4 {
+    margin-top: 24.5px;
+  }
+
+  .advantages-label-name::after {
+    display: none;
+  }
+
+  .advantages-elements {
+    margin-top: 32px;
+  }
+
+  .the-best-destinations {
+    padding-top: 40px;
+  }
+
+  .the-best-destinations-label-name {
+    font-size: 28px;
+  }
+
+  .of-interest {
+    display: none;
+  }
+
+  .the-best-destinations-buttons {
+    margin: 32px auto 24px;
+    background-color: transparent;
+    width: calc(100% / 12 * 10 + 29px);
+  }
+
+  .button-regions, .button-cities, .button-places-of-interest {
+    font-size: 19px;
+    width: 99px;
+    height: 32px;
+    background-color: #ffffff;
+    border: 1px solid #F3F3F4;
+  }
+
+  .button-regions {
+    margin-right: 16px;
+    padding: 5px 15px;
+  }
+
+  .button-cities {
+    margin-right: 16px;
+    padding: 5px 25px;
+  }
+
+  .button-places-of-interest {
+    padding: 5px 20px;
+  }
+
+  .norway-element, .island-element {
+    display: none;
+  }
+
+  .maldives-icon, .spain-icon {
+    width: 156px;
+    height: 156px;
+  }
+
+  .maldives-link, .spain-link {
+    width: 156px;
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .maldives-element, .spain-element {
+    width: calc(100% / 12 * 6 - 24px);
+    margin-bottom: 40px;
+  }
+
+  .maldives-element {
+    margin-left: 17px;
+    margin-right: 16px;
+  }
+
+  .maldives-element:hover .book-now-maldives {
+    display: none;
+  }
+
+  .spain-element:hover .book-now-spain {
+    display: none;
+  }
+
+  .offer {
+    display: none;
+  }
+
+  .arrow-h {
+    display: none;
+  }
+
+  .the-best-destinations-elements {
+    position: relative;
+  }
+
+  .the-best-destinations-arrow {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    display: block;
+    top: 62.5%;
+    left: 91%;
   }
 
   .col-s-1 {
