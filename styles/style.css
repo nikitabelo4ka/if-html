@@ -13,15 +13,22 @@
 input {
   margin: 0;
   border: 0;
+  height: 57px;
+  border-radius: 8px;
+  padding-left: 10px;
+  font-size: 18px;
 }
 
 .main {
   display: flex;
   justify-content: center;
-  background: url("../images/background.png") no-repeat;
+  background-image: url("../images/background.png");
+  background-position: top center;
+  background-repeat: no-repeat;
   padding-top: 51px;
   min-height: 935px;
-  background-size: 100%;
+  width: 100%;
+  background-size: cover;
 }
 
 .main-container {
@@ -141,83 +148,144 @@ input {
   font-weight: 500;
   font-size: 50px;
   color: #ffffff;
-  margin: 202px 0 0 104px;
+  margin: 202px 0 145px 104px;
+}
+
+label {
+  position: absolute;
+  color: #383838;
+  font-size: 18px;
+  transition: 0.2s ease all;
 }
 
 .booking-area {
-  margin: 100px 0 0 104px;
-}
-
-.input-lables {
-  margin: 0 0 24px 24px;
-}
-
-.destination-label,
-.date-in-out-label {
-  font-size: 18px;
-  color: #ffffff;
-}
-
-.date-in-out-label {
-  margin-left: 221px;
-}
-
-.inputs {
+  margin: 0 auto;
+  max-width: 1232px;
+  height: 64px;
   background-color: #ffffff;
-  width: 1222.5px;
+  border: 3px solid #f3f3f4;
   border-radius: 8px;
+}
+
+.row-form {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.destination-wrap {
+  height: 64px;
+  width: 36%;
+}
+
+.destination-label {
+  left: 24px;
+  top: 20px;
 }
 
 .destination {
-  line-height: 21px;
-  border: 0;
-  padding: 24.5px 0 21px 24px;
-  width: 467px;
-  border-radius: 8px;
-  font-size: 18px;
+  width: 100%;
+  outline: none;
 }
 
-.date-in-out {
-  border: 0;
-  line-height: 21px;
+.destination:focus {
+  border: 3px solid #f5bd41;
+}
+
+input:focus ~  .destination-label,
+input:not(:focus):valid ~ .destination-label {
+  top: -48px;
+  left: 24px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.date-in-out-wrap {
+  height: 64px;
+  width: 22%;
+  display: flex;
   border-radius: 8px;
-  padding: 22px 3px 19px 21px;
-  width: 259px;
-  font-size: 18px;
+  margin-top: -3px;
+}
+
+.date-in-label, .date-out-label {
+  left: 24px;
+  top: -37px;
+  width: 50%;
+  position: relative;
+}
+
+input:focus ~ .date-in-label,
+input:not(:focus):valid ~ .date-in-label{
+  top: -98px;
+  left: 24px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+input:focus ~ .date-out-label,
+input:not(:focus):valid ~ .date-out-label{
+  top: -98px;
+  left: 24px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.date-in, .date-out {
+  outline: none;
+  width: 100%;
+  max-width: 115px;
+}
+
+.date-in:focus, .date-out:focus {
+  border: 3px solid #f5bd41;
+}
+
+input[type='date'] {
+  font-size: 15px;
+  padding-inline-start: 24px;
+}
+
+.people-room-label {
+  left: 59%;
+  top: 20px;
 }
 
 .people-room {
-  border-radius: 8px;
-  border: 0;
-  padding: 24.5px 0 21px 24px;
-  width: 305px;
-  line-height: 21px;
-  font-size: 18px;
+  outline: none;
+  width: 27%;
 }
 
-.destination:focus,
+.people-room:focus + .people-room-label {
+  display: none;
+}
+
 .people-room:focus {
-  outline: none;
   border: 3px solid #f5bd41;
-  padding: 21.5px 0 18px 21px;
 }
 
-.date-in-out:focus {
-  outline: none;
-  border: 3px solid #f5bd41;
-  padding: 19px 0 16px 18px;
+input:focus ~ .people-room-label-label,
+input:not(:focus):valid ~ .people-room-label-label{
+  top: -98px;
+  left: 24px;
+  color: #ffffff;
+  opacity: 1;
 }
 
 .search {
-  padding: 21.5px 57px 24.5px;
+  background-color: #3077c6;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: 16%;
+  height: 64px;
   font-weight: 500;
   font-size: 24px;
+  line-height: 28px;
+  text-align: center;
   color: #ffffff;
-  background: #3077c6;
-  border: 0;
-  width: 192px;
-  line-height: 21px;
-  border-radius: 8px;
+  margin-block-start: -3px;
+  margin-inline-end: -3px;
 }
 
 .applications-icons {
@@ -947,22 +1015,6 @@ input {
     display: none;
   }
 
-  .destination {
-    width: calc(100% / 12 * 5 - 43px);
-  }
-
-  .date-in-out {
-    width: calc(100% / 12 * 2 + 55.5px);
-  }
-
-  .people-room {
-    width: calc(100% / 12 * 3 - 1px);
-  }
-
-  .search {
-    width: calc(100% / 12 * 2 - 11.5px);
-  }
-
   .col-1 {
     width: 8.33%;
   }
@@ -1032,38 +1084,20 @@ input {
   }
 
   .booking-area {
-    margin: 50px 0 0 auto;
-  }
-
-  .inputs {
-    flex-wrap: wrap;
-    max-width: 1222.5px;
-    margin: 0 auto 0 0;
-  }
-
-  .destination,
-  .date-in-out,
-  .people-room,
-  .search {
-    font-size: 13.5px;
-  }
-
-  .search {
-    padding: 24.5px 21px 21px;
-  }
-
-  .input-lables {
-    display: flex;
+    margin: 100px auto 0;
   }
 
   .destination-label,
-  .date-in-out-label {
+  .date-in-label,
+  .date-out-label,
+  .people-room-label,
+  .search {
     font-size: 15px;
     display: block;
   }
 
-  .date-in-out-label {
-    margin-left: 0;
+  input[type='date'], input[type='text'] {
+    font-size: 12px;
   }
 
   .applications-icons {
@@ -1142,12 +1176,17 @@ input {
   .ubud-bali-resort-spa-element,
   .king-kong-hostel-element,
   .rokoko-hotel-element {
-    width: calc(100% / 12 * 4 - 19px);
+    margin: 0 auto;
   }
 
   .ubud-bali-resort-spa-element,
   .king-kong-hostel-element {
-    margin-right: 0;
+    width: calc(100% / 12 * 5 + 50px);
+  }
+
+  .rokoko-hotel-element {
+    margin-top: 40px;
+    width: calc(100% / 12 * 5 + 80px);
   }
 
   .ubud-bali-resort-spa-wrapper,
@@ -1286,38 +1325,133 @@ input {
   }
 
   .booking-area {
-    margin: 0 auto;
-    padding: 31px 12px 0 12px;
-  }
-
-  .inputs {
-    margin: 0 auto;
-    width: 328px;
     height: 232px;
+    background: #f5bd41;
+    border: 0;
     border-radius: 0;
-    background-color: #f5bd41;
+    margin-bottom: 60px;
+    padding: 8px;
   }
 
-  .destination,
-  .date-in-out,
-  .people-room {
-    margin: 8px 8px 0 8px;
-    font-size: 15px;
-    width: calc(100% / 12 * 11 + 11.5px);
+  .row-form {
+    display: block;
+    margin-block-start: 0;
+  }
+
+  input {
     height: 48px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    padding-top: 12px;
+    padding-left: 36px;
+    color: #383838;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .destination-wrap {
+    width: 100%;
+  }
+
+  .destination-label {
+    left: 36px;
+    top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  input:focus ~ .destination-label,
+  input:not(:focus):valid ~ .destination-label {
+    top: 6px;
+    left: 36px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
+  }
+
+  .date-in-out-wrap {
+    margin-top: 1px;
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+  }
+
+  .date-in-wrap, .date-out-wrap {
+    width: 49%;
+  }
+
+  .date-in-label,
+  .date-out-label {
+    left: 36px;
+    top: -42px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  input:focus ~ .date-in-label,
+  input:not(:focus):valid ~ .date-in-label {
+    top: -55px;
+    left: 36px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
+  }
+
+  input:focus ~ .date-out-label,
+  input:not(:focus):valid ~ .date-out-label {
+    top: -55px;
+    left: 36px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
+  }
+
+  .date-in, .date-out {
+    max-width: 337px;
+  }
+
+  input[type="date"] {
+    align-items: center;
+    display: inline-flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding-inline-start: 36px;
+    border: 0;
+  }
+
+  .people-room {
+    margin-top: 8px;
+  }
+
+  .people-room-label {
+    left: 36px;
+    top: 129px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  input:focus ~ .people-room-label,
+  input:not(:focus):valid ~ .people-room-label {
+    top: 115px;
+    left: 36px;
+    font-size: 12px;
+    color: #383838;
+    opacity: 1;
   }
 
   .search {
-    line-height: 22px;
-    margin: 8px;
-    width: calc(100% / 12 * 11 + 11.5px);
-    height: 48px;
     font-size: 19px;
-    padding: 14px 125px;
-  }
-
-  .input-lables {
-    display: none;
+    height: 48px;
+    border-radius: 4px;
+    margin-block-start: 0;
   }
 
   .applications-icons {
