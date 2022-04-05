@@ -1355,6 +1355,7 @@ input:not(:focus):valid ~ .people-room-label-label{
   }
 
   .destination-wrap {
+    height: 48px;
     width: 100%;
   }
 
@@ -1375,7 +1376,7 @@ input:not(:focus):valid ~ .people-room-label-label{
   }
 
   .date-in-out-wrap {
-    margin-top: 1px;
+    margin-top: 8px;
     height: 48px;
     width: 100%;
     display: flex;
