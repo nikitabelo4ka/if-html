@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="main">
-      <div class="main-container col-m-12 col-s-12">
+      <div class="main-container col-s-12">
         <div class="header col-m-10 col-s-12">
           <div class="logo col-2 col-s-5">
             <svg class="logo-icon">
@@ -74,37 +74,67 @@
           Discover stays <br />
           to live, work or just relax
         </h1>
-        <div class="booking-area col-m-11">
-          <div class="input-lables col-m-11">
-            <label class="destination-label col-m-4" for="destination"
-              >Your destination or hotel name</label
-            >
-            <label class="date-in-out-label col-m-8" for="date"
-              >Check-in — Check-out</label
-            >
-            <label class="people-room-label" for="people-room"></label>
-          </div>
-          <form class="inputs col-m-11" action="/" method="GET">
-            <input
-              class="destination col-m-3"
-              id="destination"
-              name="destination"
-              type="text"
-              placeholder=" New York"
-            /><input
-              class="date-in-out col-m-3"
-              id="date"
-              name="date-in-out"
-              type="date"
-            /><input
-              class="people-room col-m-4"
-              id="people-room"
-              name="people-room"
-              type="text"
-              placeholder="2 Adults — 0 Children — 1 Room"
-            /><button type="submit" value="Search" class="search col-m-2">
-              Search
-            </button>
+        <div class="booking-area col-m-11 col-s-11">
+          <form class="inputs" action="#" method="get">
+            <div class="row-form">
+              <div class="destination-wrap">
+                <input
+                  class="destination col-s-12"
+                  id="destination"
+                  name="destination"
+                  type="text"
+                  required
+                />
+                <label class="destination-label" for="destination"
+                  >Your destination or hotel name</label
+                >
+              </div>
+              <div class="date-in-out-wrap">
+                <div class="date-in-wrap">
+                  <input
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                    class="date-in col-s-12"
+                    type="text"
+                    name="date-in"
+                    id="date-in"
+                    required
+                  />
+                  <label class="date-in-label col-m-10 col-s-12" for="date-in"
+                    >Check-in</label
+                  >
+                </div>
+                <div class="date-out-wrap">
+                  <input
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                    class="date-out col-s-12"
+                    id="date-out"
+                    name="date-out"
+                    type="text"
+                    required
+                  />
+                  <label class="date-out-label col-m-9 col-s-12" for="date-out"
+                    >Check-out</label
+                  >
+                </div>
+              </div>
+              <input
+                class="people-room col-s-12"
+                id="people-room"
+                name="people-room"
+                type="text"
+                required
+              />
+              <label
+                class="people-room-label col-m-3 col-s-12"
+                for="people-room"
+                >2 Adults &#8212; 0 Children &#8212; 1 Room</label
+              >
+              <button type="submit" value="Search" class="search col-s-12">
+                Search
+              </button>
+            </div>
           </form>
         </div>
         <div class="applications-icons col-3 col-m-4 col-s-12">
@@ -212,15 +242,30 @@
     <div class="the-best-destinations">
       <div class="the-best-destinations-container col-m-12 col-s-12">
         <div class="the-best-destinations-label">
-          <h2 class="the-best-destinations-label-name">The best destinations</h2>
+          <h2 class="the-best-destinations-label-name">
+            The best destinations
+          </h2>
         </div>
         <div class="the-best-destinations-buttons col-m-6">
-          <button class="button-regions active col-s-4 col-m-4" type="button">Regions</button><button class="button-cities col-s-4 col-m-4" type="button">Cities</button><button class="button-places-of-interest col-m-4 col-s-4" type="button">Places <span class="of-interest">of interest</span></button>
+          <button class="button-regions active col-s-4 col-m-4" type="button">
+            Regions</button
+          ><button class="button-cities col-s-4 col-m-4" type="button">
+            Cities</button
+          ><button
+            class="button-places-of-interest col-m-4 col-s-4"
+            type="button"
+          >
+            Places <span class="of-interest">of interest</span>
+          </button>
         </div>
         <div class="the-best-destinations-elements col-m-12 col-s-12">
           <div class="maldives-element col-3 col-m-6">
             <div class="maldives-icon-wrapper">
-              <img class="maldives-icon" src="images/Maldives.png" alt="Maldives image">
+              <img
+                class="maldives-icon"
+                src="images/Maldives.png"
+                alt="Maldives image"
+              />
               <div class="shadow"></div>
             </div>
             <a class="maldives-link" href="">Maldives</a>
@@ -228,7 +273,11 @@
           </div>
           <div class="spain-element col-3 col-m-6">
             <div class="spain-icon-wrapper">
-              <img class="spain-icon" src="images/Spain.png" alt="Spain-image">
+              <img
+                class="spain-icon"
+                src="images/Spain.png"
+                alt="Spain-image"
+              />
               <div class="shadow"></div>
             </div>
             <a class="spain-link" href="">Spain</a>
@@ -236,7 +285,11 @@
           </div>
           <div class="norway-element col-3 col-m-6">
             <div class="norway-icon-wrapper">
-              <img class="norway-icon" src="images/Norway.png" alt="Norway image">
+              <img
+                class="norway-icon"
+                src="images/Norway.png"
+                alt="Norway image"
+              />
               <div class="shadow"></div>
             </div>
             <a class="norway-link" href="">Norway</a>
@@ -244,7 +297,11 @@
           </div>
           <div class="island-element col-3 col-m-6">
             <div class="island-icon-wrapper">
-              <img class="island-icon" src="images/Island.png" alt="Island image">
+              <img
+                class="island-icon"
+                src="images/Island.png"
+                alt="Island image"
+              />
               <div class="shadow"></div>
             </div>
             <a class="island-link" href="">Island</a>
@@ -262,11 +319,165 @@
             <use xlink:href="images/sprite.svg#user"></use>
           </svg>
           <div class="sign-up">
-            <h3 class="sign-up-text">Sign up and get 20% off your first booking</h3>
+            <h3 class="sign-up-text">
+              Sign up and get 20% off your first booking
+            </h3>
             <button class="sign-up-button" type="button">Sign up</button>
           </div>
           <svg class="close-icon">
             <use xlink:href="images/sprite.svg#close"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="guests-reviews">
+      <div class="guests-reviews-container col-m-12 col-s-12">
+        <div class="guests-reviews-label">
+          <h2 class="guests-reviews-label-name">Guests reviews</h2>
+        </div>
+        <div class="guests-reviews-elements col-m-12 col-s-12">
+          <div class="ubud-bali-resort-spa-element col-s-12">
+            <svg class="navigation-mobile">
+              <use xlink:href="images/sprite.svg#navigation"></use>
+            </svg>
+            <div class="guests-reviews-label-mobile">
+              <h2 class="guests-reviews-label-name-mobile">Reviews</h2>
+            </div>
+            <img
+              class="ubud-bali-resort-spa-icon"
+              src="images/bali.png"
+              alt="Bali image"
+            />
+            <div class="bali-shadow">
+              From <span class="bali-shadow-usd">250 USD</span>
+            </div>
+            <div class="ubud-bali-resort-spa-wrapper">
+              <div class="ubud-bali-resort-spa-link-location">
+                <a class="ubud-bali-resort-spa-link" href=""
+                  >Ubud Bali Resort&SPA</a
+                >
+                <a class="ubud-bali-resort-spa-location" href=""
+                  >Bali, Indonesia</a
+                >
+              </div>
+              <div class="rating-bali">
+                <div class="score-bali">9,4</div>
+                <h5 class="reviews-bali">1324 reviews</h5>
+              </div>
+            </div>
+            <div class="bali-feedback">
+              <div class="bali-feedback-user">
+                <svg class="bali-feedback-account">
+                  <use xlink:href="images/sprite.svg#account"></use>
+                </svg>
+                <div class="bali-feedback-account-name-country">
+                  <h3 class="bali-feedback-account-name">Hanna Ivanova</h3>
+                  <div class="bali-feedback-account-country">
+                    <img
+                      class="ukaraine-flag"
+                      src="images/ukraine.png"
+                      alt="ukraine-flag"
+                    />
+                    Ukraine
+                  </div>
+                </div>
+              </div>
+              <p class="bali-feedback-text">
+                Great location, really pleasant and clean rooms, but the thing
+                that makes this such a good place to stay are the staff. All of
+                the people are incredibly helpful and generous with their time
+                and advice.
+              </p>
+            </div>
+          </div>
+          <div class="king-kong-hostel-element">
+            <img
+              class="king-kong-hostel-icon"
+              src="images/rotterdam.png"
+              alt="King Kong Hostel image"
+            />
+            <div class="king-kong-shadow">
+              From <span class="king-kong-shadow-usd">40 USD</span>
+            </div>
+            <div class="king-kong-hostel-wrapper">
+              <div class="king-kong-hostel-link-location">
+                <a class="king-kong-hostel-link" href="">King Kong Hostel</a>
+                <a class="king-kong-hostel-location" href=""
+                  >Rotterdam, Netherlands</a
+                >
+              </div>
+              <div class="rating-king-kong">
+                <div class="score-king-kong">8,9</div>
+                <h5 class="reviews-kink-kong">2016 reviews</h5>
+              </div>
+            </div>
+            <div class="king-kong-feedback">
+              <div class="king-kong-feedback-user">
+                <svg class="king-kong-feedback-account">
+                  <use xlink:href="images/sprite.svg#account"></use>
+                </svg>
+                <div class="king-kong-feedback-account-name-country">
+                  <h3 class="king-kong-feedback-account-name">Adam Smith</h3>
+                  <div class="king-kong-feedback-account-country">
+                    <img class="usa-flag" src="images/usa.png" alt="usa-flag" />
+                    USA
+                  </div>
+                </div>
+              </div>
+              <p class="king-kong-feedback-text">
+                I've been in this hostel for a month and here is the best hostel
+                of all Excellent management of excellent and ethical staff and
+                bedrooms Bathrooms are always clean and excellent Most
+                importantly, those who work here are kind and good-natured.
+              </p>
+            </div>
+          </div>
+          <div class="rokoko-hotel-element">
+            <img
+              class="rokoko-hotel-icon"
+              src="images/ourika.png"
+              alt="Rokoko Hotel image"
+            />
+            <div class="rokoko-shadow">
+              From <span class="rokoko-shadow-usd">100 USD</span>
+            </div>
+            <div class="rokoko-hotel-wrapper">
+              <div class="rokoko-hotel-link-location">
+                <a class="rokoko-hotel-link" href="">Rokoko Hotel</a>
+                <a class="rokoko-hotel-location" href="">Ourika, Marocco</a>
+              </div>
+              <div class="rating-rokoko">
+                <div class="score-rokoko">9,1</div>
+                <h5 class="reviews-rokoko">815 reviews</h5>
+              </div>
+            </div>
+            <div class="rokoko-feedback">
+              <div class="rokoko-feedback-user">
+                <svg class="rokoko-feedback-account">
+                  <use xlink:href="images/sprite.svg#account"></use>
+                </svg>
+                <div class="rokoko-feedback-account-name-country">
+                  <h3 class="rokoko-feedback-account-name">Anika Messer</h3>
+                  <div class="rokoko-feedback-account-country">
+                    <img
+                      class="germany-flag"
+                      src="images/germany.png"
+                      alt="germany-flag"
+                    />
+                    Germany
+                  </div>
+                </div>
+              </div>
+              <p class="rokoko-feedback-text">
+                Efficient, friendly, professional, and appropriately attentive.
+                Great hotel in a great location. Easy access to all the
+                surrounding historical sites. Staff is fantastic. Will
+                definitely stay at this location during my next stay in Marocco.
+              </p>
+            </div>
+          </div>
+          <svg class="guests-reviews-arrow">
+            <use xlink:href="images/sprite.svg#arrow"></use>
           </svg>
         </div>
       </div>
